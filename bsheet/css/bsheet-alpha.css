@@ -5,6 +5,143 @@
 }
 
 body {
-  font-size: 62.5%;
-  background: #ecf0f1;
+  background: white;
+}
+
+.main-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+h2 {
+  font-weight: 700;
+  margin: 18px 0;
+}
+
+h3 {
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+h4 {
+  font-weight: 700;
+  margin: 14px 0;
+}
+
+h5 {
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+h6 {
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.text-leve {
+  font-weight: 400;
+}
+
+.text-fino {
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-leve {
+  font-weight: 400;
+}
+
+.text-fino {
+  font-weight: 300;
+}
+
+.ui {
+  background: white;
+  padding: 20px;
+}
+
+.card {
+  display: block;
+  background: transparent;
+}
+
+.card-heading {
+  display: block;
+  margin: 0;
+  padding: 15px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid black;
+  color: black;
+}
+
+.card-content {
+  display: block;
+  padding: 15px 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.col {
+  padding: 20px;
+  display: inline-block;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.3333%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-5 {
+  width: 20%;
+}
+
+.col-6 {
+  width: 16.66667%;
+}
+
+.col-7 {
+  width: 14.28571%;
+}
+
+.col-8 {
+  width: 12.5%;
+}
+
+.col-9 {
+  width: 11.11111%;
+}
+
+.col-10 {
+  width: 10%;
+}
+
+.col-11 {
+  width: 9.09091%;
+}
+
+.col-12 {
+  width: 8.3%;
 }
