@@ -1,0 +1,59 @@
+.wrapper-cartoes
+	display: flex
+	flex-wrap: wrap
+
+.cartao
+	display: block
+	//padding: 15px
+	background: white
+	color: black
+	flex: 1
+	&-flutoante	
+		//flex: 1
+		margin: 10px 0px 10px 10px
+		//max-width: 400px
+		border-radius: 8px
+		border: 1px solid darken($gelo, 20%)
+		&:last-of-type
+			margin-right: 10px
+	&-cabecalho
+		font-size: 20px
+		box-sizing: border-box		
+		text-align: left
+		border-bottom: 1px solid darken($gelo, 20%)
+
+.titulo-cartao
+	&-cabecalho
+		display: inline-block
+		padding: 20px 10px
+		color: darken($gelo, 60%)
+		font-weight: 300
+	
+	&-flutoante
+		border-top-left-radius: 8px
+		border-top-right-radius: 8px
+		background: $asfalto
+		color: white
+		font-size: 18px
+		font-weight: 300
+		padding: 10px
+
+	&--azul
+		background: $azul
+	&--vermelho
+		background: $vermelho
+	&--amarelo
+		background: $amarelo
+	&--roxo
+		background: $roxo
+	&--laranja
+		background: $laranja
+	&--verde
+		background: $verde
+
+.content-cartao
+	padding: 10px
+
+
+
+
