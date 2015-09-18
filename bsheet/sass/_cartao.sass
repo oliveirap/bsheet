@@ -10,10 +10,11 @@
 	flex: 1
 	&-flutoante	
 		//flex: 1
-		margin: 10px 0px 10px 10px
+		margin: 5px 0px 5px 5px
 		//max-width: 400px
-		border-radius: 8px
-		border: 1px solid darken($gelo, 20%)
+		//border-radius: 8px
+		box-shadow: 0 2px 3px rgba(darken($gelo, 35%), 0.45)
+		//border: 1px solid darken($gelo, 20%)
 		&:last-of-type
 			margin-right: 10px
 	&-cabecalho
@@ -25,31 +26,44 @@
 .titulo-cartao
 	&-cabecalho
 		display: inline-block
-		padding: 20px 10px
+		padding: 20px
 		color: darken($gelo, 60%)
 		font-weight: 300
 	
 	&-flutoante
-		border-top-left-radius: 8px
-		border-top-right-radius: 8px
-		background: $asfalto
-		color: white
+		//border-top-left-radius: 8px
+		//border-top-right-radius: 8px
+		background: darken($gelo, 10%)
+		border-bottom: 2px solid darken($gelo, 20%)
+		color: darken($gelo, 50%)
 		font-size: 18px
 		font-weight: 300
 		padding: 10px
 
 	&--azul
 		background: $azul
+		color: white
+		border-bottom: 2px solid darken($azul, 15%)
 	&--vermelho
 		background: $vermelho
+		color: white
+		border-bottom: 2px solid darken($vermelho, 15%)
 	&--amarelo
 		background: $amarelo
+		color: white
+		border-bottom: 2px solid darken($amarelo, 15%)
 	&--roxo
 		background: $roxo
+		color: white
+		border-bottom: 2px solid darken($roxo, 15%)
 	&--laranja
 		background: $laranja
+		color: white
+		border-bottom: 2px solid darken($laranja, 15%)
 	&--verde
 		background: $verde
+		color: white
+		border-bottom: 2px solid darken($verde, 15%)
 
 .content-cartao
 	padding: 10px

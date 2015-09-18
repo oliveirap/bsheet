@@ -7,18 +7,31 @@
 		padding: 15px 20px
 
 .item-menu--principal
-	text-align: center
+	text-align: left
 	font-size: 16px
-	text-transform: uppercase
+	//text-transform: uppercase
 	//transition: all 100ms ease-in-out
 	color: rgba(white, 0.5)
 	&:hover
 		color: rgba(white, 1)
 	a
-		border-bottom: 1px solid rgba(white, 0.5)
+		//border-bottom: 1px solid rgba(white, 0.5)
 		&:hover
 			transition: all 200ms ease-in-out
-			border-bottom: 1px solid rgba($vermelho, 1)
-	
+			//border-bottom: 1px solid rgba($vermelho, 1)
 
-
+	&.active
+		color: white
+		background: $clay
+		//border-bottom: 1px solid rgba($vermelho, 1)
+		&:before
+			content: ""
+			width: 3px
+			height: 51px
+			background: lighten($asfalto, 25%)
+			display: block
+			float: left
+			position: relative
+			//right: 5px
+			line-height: 0
+			//top: 3px

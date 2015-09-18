@@ -21,15 +21,19 @@ a {
   clear: both;
 }
 
-main {
-  width: calc(100% - 180px);
-  position: relative;
-  left: 180px;
+.holder {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
-@media only screen and (max-width: 640px) {
-  main {
-    left: 0;
-    width: auto;
+@media only screen and (max-width: 768px) {
+  .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -76,29 +80,16 @@ main {
 }
 
 .menu-principal {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0px;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   color: white;
-  height: 100vh;
-  position: fixed;
   float: left;
   width: 180px;
   box-sizing: border-box;
   background: #0d1217;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .menu-principal {
     width: auto;
     position: relative;
@@ -120,21 +111,30 @@ main {
 }
 
 .item-menu--principal {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
 }
 .item-menu--principal:hover {
   color: white;
 }
-.item-menu--principal a {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
 .item-menu--principal a:hover {
   -webkit-transition: all 200ms ease-in-out;
           transition: all 200ms ease-in-out;
-  border-bottom: 1px solid #c0392b;
+}
+.item-menu--principal.active {
+  color: white;
+  background: #22313F;
+}
+.item-menu--principal.active:before {
+  content: "";
+  width: 3px;
+  height: 51px;
+  background: #597ea2;
+  display: block;
+  float: left;
+  position: relative;
+  line-height: 0;
 }
 
 .wrapper-cartoes {
@@ -157,9 +157,8 @@ main {
           flex: 1;
 }
 .cartao-flutoante {
-  margin: 10px 0px 10px 10px;
-  border-radius: 8px;
-  border: 1px solid #b1c2c6;
+  margin: 5px 0px 5px 5px;
+  box-shadow: 0 2px 3px rgba(133, 159, 165, 0.45);
 }
 .cartao-flutoante:last-of-type {
   margin-right: 10px;
@@ -173,36 +172,47 @@ main {
 
 .titulo-cartao-cabecalho {
   display: inline-block;
-  padding: 20px 10px;
+  padding: 20px;
   color: #495d62;
   font-weight: 300;
 }
 .titulo-cartao-flutoante {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  background: #2c3e50;
-  color: white;
+  background: #cfd9db;
+  border-bottom: 2px solid #b1c2c6;
+  color: #5e7980;
   font-size: 18px;
   font-weight: 300;
   padding: 10px;
 }
 .titulo-cartao--azul {
   background: #3498db;
+  color: white;
+  border-bottom: 2px solid #1d6fa5;
 }
 .titulo-cartao--vermelho {
   background: #c0392b;
+  color: white;
+  border-bottom: 2px solid #81261d;
 }
 .titulo-cartao--amarelo {
   background: #f1c40f;
+  color: white;
+  border-bottom: 2px solid #aa8a0a;
 }
 .titulo-cartao--roxo {
   background: #8e44ad;
+  color: white;
+  border-bottom: 2px solid #612e76;
 }
 .titulo-cartao--laranja {
   background: #d35400;
+  color: white;
+  border-bottom: 2px solid #863600;
 }
 .titulo-cartao--verde {
   background: #2ecc71;
+  color: white;
+  border-bottom: 2px solid #208e4e;
 }
 
 .content-cartao {
