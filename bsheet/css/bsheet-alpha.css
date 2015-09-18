@@ -218,3 +218,22 @@ a {
 .content-cartao {
   padding: 10px;
 }
+
+.btn {
+  display: block;
+  float: right;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.link-addon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  float: left;
+  margin-right: 5px;
+}
+.link-addon--sair {
+  background: red;
+}
