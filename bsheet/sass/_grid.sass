@@ -1,0 +1,35 @@
+main
+	width: calc(100% - 180px)
+	position: relative
+	left: 180px
+	@media only screen and (max-width: 640px)
+		left: 0
+		width: auto
+.row
+	display: block
+	@extend .clearfix
+
+.col-1
+	display: block
+
+.col-2
+	display: block
+	width: 50%
+	float: left
+
+.col-3
+	display: block
+	width: 33.33333%
+	float: left
+
+.col-4
+	display: block
+	width: 25%
+	float: left
+
+@media only screen and (max-width: 768px)
+	.col-1,
+	.col-2,
+	.col-3,
+	.col-4
+		width: 100%
